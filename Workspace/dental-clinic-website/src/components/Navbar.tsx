@@ -56,7 +56,7 @@ function Navbar() {
 
           <a
             href="#appointment"
-            className="flex items-center justify-center rounded-full bg-brand-700 px-6 py-3 text-center text-[13.5px] leading-[18px] font-bold text-white hover:bg-brand-800"
+            className="isolate box-border flex h-10 w-[109px] flex-none flex-row items-center justify-center rounded-full bg-brand-700 px-5 py-2.5 text-center text-[13.5px] leading-[18px] font-bold text-white shadow-[0px_14px_30px_-12px_rgba(44,90,140,0.4)] hover:bg-brand-800"
           >
             Book Now
           </a>
