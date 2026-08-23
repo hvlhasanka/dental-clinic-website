@@ -7,7 +7,7 @@ const DOCTOR_PHOTO_URL =
 
 function WhyChooseUs() {
   return (
-    <section id="about" className="scroll-mt-20 bg-white pt-8 pb-16 lg:pt-12 lg:pb-24">
+    <section id="about" className="scroll-mt-20 bg-white pt-8 pb-8 lg:pt-12 lg:pb-12">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-16 px-4 lg:grid-cols-2 lg:px-8">
         {/* Left column */}
         <div className="relative mx-auto w-full max-w-xs lg:max-w-[340px]">
