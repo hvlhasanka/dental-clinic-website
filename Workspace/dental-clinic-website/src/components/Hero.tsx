@@ -11,7 +11,7 @@ function Hero() {
       id="home"
       className="scroll-mt-20 bg-white"
     >
-      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-16 px-4 py-16 lg:grid-cols-2 lg:px-8 lg:py-24">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-16 px-4 pt-16 pb-8 lg:grid-cols-2 lg:px-8 lg:pt-24 lg:pb-12">
         {/* Left column */}
         <div className="flex flex-col gap-6">
           {/* Row 1: subheading row */}
