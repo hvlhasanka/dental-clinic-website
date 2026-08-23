@@ -2,37 +2,40 @@ import {
   HiOutlineArrowTrendingUp,
   HiOutlineCheck,
   HiOutlineHeart,
-} from 'react-icons/hi2'
-import peopleIcon from '../assets/icons/people.png'
-import checkIcon from '../assets/icons/check.png'
+} from "react-icons/hi2";
+import peopleIcon from "../assets/icons/people.png";
+import checkIcon from "../assets/icons/check.png";
 
 const SMALL_STATS = [
   {
     iconSrc: peopleIcon,
-    value: '11k+',
-    label: 'Patients treated online & in-clinic',
+    value: "11k+",
+    label: "Patients treated online & in-clinic",
   },
   {
     iconSrc: checkIcon,
-    value: '8+',
-    label: 'Years of clinical experience',
+    value: "8+",
+    label: "Years of clinical experience",
   },
   {
     icon: HiOutlineCheck,
-    value: '132+',
-    label: 'Patient reviews & ratings',
+    value: "132+",
+    label: "Patient reviews & ratings",
   },
   {
     icon: HiOutlineArrowTrendingUp,
-    value: '36/5',
-    label: 'Average patient rating on Justdial',
+    value: "36/5",
+    label: "Average patient rating on Justdial",
     verified: true,
   },
-]
+];
 
 function Stats() {
   return (
-    <section id="stats" className="scroll-mt-20 bg-white pt-8 pb-8 lg:pt-12 lg:pb-12">
+    <section
+      id="stats"
+      className="scroll-mt-20 bg-white pt-8 pb-8 lg:pt-12 lg:pb-12"
+    >
       <div className="mx-auto max-w-6xl px-4 lg:px-8">
         <div className="mb-12 flex flex-col items-center gap-3 text-center">
           <div className="flex items-center gap-0">
@@ -50,8 +53,8 @@ function Stats() {
           <span
             className="pointer-events-none absolute inset-0 rounded-[32px]"
             style={{
-              background: 'rgba(255, 255, 255, 0.002)',
-              boxShadow: '0px 50px 90px -55px rgba(44, 90, 140, 0.35)',
+              background: "rgba(255, 255, 255, 0.002)",
+              boxShadow: "0px 50px 90px -55px rgba(44, 90, 140, 0.35)",
             }}
           />
 
@@ -60,16 +63,17 @@ function Stats() {
             <div
               className="relative isolate flex min-h-[531.18px] flex-col items-start justify-center gap-8 overflow-hidden rounded-3xl px-8 py-[156.03px]"
               style={{
-                background: 'linear-gradient(158.25deg, #2C5A8C 0%, #16324F 100%)',
+                background:
+                  "linear-gradient(158.25deg, #2C5A8C 0%, #16324F 100%)",
               }}
             >
               <span
                 className="pointer-events-none absolute z-0 order-0 h-[220px] w-[220px] flex-none rounded-full"
                 style={{
-                  right: '-60px',
-                  top: '-70px',
+                  right: "-60px",
+                  top: "-70px",
                   background:
-                    'radial-gradient(70.71% 70.71% at 50% 50%, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0) 70%)',
+                    "radial-gradient(70.71% 70.71% at 50% 50%, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0) 70%)",
                 }}
               />
 
@@ -84,54 +88,61 @@ function Stats() {
                   Patient satisfaction rate
                 </p>
                 <p className="order-0 mt-2 flex w-full max-w-[260px] flex-none items-center self-stretch text-[13.1px] leading-5 font-medium text-white/72">
-                  Measured after every visit — routine checkup or full smile makeover.
+                  Measured after every visit — routine checkup or full smile
+                  makeover.
                 </p>
               </div>
               <span
                 className="pointer-events-none absolute z-[1] order-1 box-border h-[162px] w-[162px] flex-none rounded-full border border-dashed border-white/18"
-                style={{ left: '-40px', bottom: '-50px' }}
+                style={{ left: "-40px", bottom: "-50px" }}
               />
             </div>
 
             {/* Small stat grid */}
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {SMALL_STATS.map(({ icon: Icon, iconSrc, value, label, verified }) => (
-                <div
-                  key={label}
-                  className={`relative box-border flex min-h-[174px] flex-col items-start gap-4 rounded-[20px] border border-[rgba(19,36,32,0.12)] bg-white px-[22px] py-6 ${
-                    verified ? 'sm:col-span-2' : ''
-                  }`}
-                >
-                  <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-surface-alt text-brand-700">
-                    {iconSrc ? (
-                      <img src={iconSrc} alt="" className="h-5 w-5 object-contain" />
-                    ) : (
-                      Icon && <Icon className="h-5 w-5" />
-                    )}
-                  </span>
-                  <div>
-                    <p className="order-0 flex h-[41px] w-full max-w-[251.75px] flex-none items-center self-stretch text-[30px] leading-[41px] font-bold text-[#2C5A8C]">
-                      {value}
-                    </p>
-                    <p className="order-0 mt-1 flex h-[19px] w-full max-w-[251.75px] flex-none items-center self-stretch text-[12.1px] leading-[18px] font-medium text-[#3D504B]">
-                      {label}
-                    </p>
-                  </div>
-                  {verified && (
-                    <span className="absolute top-6 right-6 order-1 flex h-6 w-[61px] flex-none flex-row items-center rounded-full bg-[#FBE0D6] px-2 py-1">
-                      <span className="order-0 flex h-4 w-[45px] flex-none items-center text-[11.5px] leading-4 font-bold text-[#E86A4F]">
-                        Verified
-                      </span>
+              {SMALL_STATS.map(
+                ({ icon: Icon, iconSrc, value, label, verified }) => (
+                  <div
+                    key={label}
+                    className={`relative box-border flex min-h-[174px] flex-col items-start gap-4 rounded-[20px] border border-[rgba(19,36,32,0.12)] bg-white px-[22px] py-6 ${
+                      verified ? "sm:col-span-2" : ""
+                    }`}
+                  >
+                    <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-surface-alt text-brand-700">
+                      {iconSrc ? (
+                        <img
+                          src={iconSrc}
+                          alt=""
+                          className="h-5 w-5 object-contain"
+                        />
+                      ) : (
+                        Icon && <Icon className="h-5 w-5" />
+                      )}
                     </span>
-                  )}
-                </div>
-              ))}
+                    <div>
+                      <p className="order-0 flex h-[41px] w-full max-w-[251.75px] flex-none items-center self-stretch text-[30px] leading-[41px] font-bold text-[#2C5A8C]">
+                        {value}
+                      </p>
+                      <p className="order-0 mt-1 flex h-[19px] w-full max-w-[251.75px] flex-none items-center self-stretch text-[12.1px] leading-[18px] font-medium text-[#3D504B]">
+                        {label}
+                      </p>
+                    </div>
+                    {verified && (
+                      <span className="absolute top-6 right-6 order-1 flex h-6 w-[61px] flex-none flex-row items-center rounded-full bg-[#FBE0D6] px-2 py-1">
+                        <span className="order-0 flex h-4 w-[45px] flex-none items-center text-[11.5px] leading-4 font-bold text-[#E86A4F]">
+                          Verified
+                        </span>
+                      </span>
+                    )}
+                  </div>
+                ),
+              )}
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Stats
+export default Stats;

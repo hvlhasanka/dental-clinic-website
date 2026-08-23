@@ -1,23 +1,23 @@
-import { useState } from 'react'
-import { HiMenu, HiX } from 'react-icons/hi'
+import { useState } from "react";
+import { HiMenu, HiX } from "react-icons/hi";
 
 const LOGO_URL =
-  'https://res.cloudinary.com/jvhaorsn/image/upload/v1787434838/logo_pskq5j.png'
+  "https://res.cloudinary.com/jvhaorsn/image/upload/v1787434838/logo_pskq5j.png";
 const PHONE_ICON_URL =
-  'https://res.cloudinary.com/jvhaorsn/image/upload/v1787434911/phone-icon_jty6oa.png'
+  "https://res.cloudinary.com/jvhaorsn/image/upload/v1787434911/phone-icon_jty6oa.png";
 
 const NAV_LINKS = [
-  { label: 'Home', href: '#home' },
-  { label: 'Services', href: '#services' },
-  { label: 'Appointment', href: '#appointment' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
-]
+  { label: "Home", href: "#home" },
+  { label: "Services", href: "#services" },
+  { label: "Appointment", href: "#appointment" },
+  { label: "About", href: "#about" },
+  { label: "Contact", href: "#contact" },
+];
 
-const EMERGENCY_PHONE = '011-4XXX-XXXX'
+const EMERGENCY_PHONE = "011-4XXX-XXXX";
 
 function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 border-b border-surface-alt bg-white">
@@ -117,7 +117,7 @@ function Navbar() {
         </div>
       )}
     </header>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

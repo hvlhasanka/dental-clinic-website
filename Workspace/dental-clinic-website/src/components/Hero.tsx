@@ -1,16 +1,13 @@
-import { HiOutlineClock } from 'react-icons/hi'
+import { HiOutlineClock } from "react-icons/hi";
 
 const HERO_IMAGE_URL =
-  'https://res.cloudinary.com/jvhaorsn/image/upload/v1787499612/hero-image_ilozmj.png'
+  "https://res.cloudinary.com/jvhaorsn/image/upload/v1787499612/hero-image_ilozmj.png";
 
-const AVATAR_INITIALS = ['JC', 'WW', 'JW']
+const AVATAR_INITIALS = ["JC", "WW", "JW"];
 
 function Hero() {
   return (
-    <section
-      id="home"
-      className="scroll-mt-20 bg-white"
-    >
+    <section id="home" className="scroll-mt-20 bg-white">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-16 px-4 pt-16 pb-8 lg:grid-cols-2 lg:px-8 lg:pt-24 lg:pb-12">
         {/* Left column */}
         <div className="flex flex-col gap-6">
@@ -30,8 +27,9 @@ function Hero() {
 
           {/* Row 3: subcopy */}
           <p className="flex max-w-[461px] items-center text-[16.6px] leading-[29px] font-medium text-[#3D504B]">
-            Led by Dr. ___, our clinic offers advanced dentistry with over 11 years of
-            experience — from routine checkups to full implant and smile makeovers.
+            Led by Dr. ___, our clinic offers advanced dentistry with over 11
+            years of experience — from routine checkups to full implant and
+            smile makeovers.
           </p>
 
           {/* Row 4: buttons row */}
@@ -90,7 +88,10 @@ function Hero() {
             className="h-auto w-full rounded-3xl object-cover"
           />
 
-          <span className="absolute isolate z-[1] order-1 flex h-[67px] w-[116px] flex-none flex-col items-start gap-px rounded-2xl bg-brand-700 px-4 py-3 text-white" style={{ top: '-18px', right: '-31.26px' }}>
+          <span
+            className="absolute isolate z-[1] order-1 flex h-[67px] w-[116px] flex-none flex-col items-start gap-px rounded-2xl bg-brand-700 px-4 py-3 text-white"
+            style={{ top: "-18px", right: "-31.26px" }}
+          >
             <span className="order-1 z-[1] flex h-[27px] w-[45px] flex-none items-center text-[20px] leading-[27px] font-bold text-white">
               15k+
             </span>
@@ -111,7 +112,7 @@ function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
