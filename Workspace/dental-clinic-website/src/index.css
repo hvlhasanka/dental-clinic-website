@@ -20,9 +20,19 @@
   --color-link: #3d504b;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: var(--font-sans);
   color: var(--color-ink);
   background: var(--color-surface);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
