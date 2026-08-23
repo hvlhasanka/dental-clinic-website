@@ -32,7 +32,7 @@ const SMALL_STATS = [
 
 function Stats() {
   return (
-    <section id="stats" className="scroll-mt-20 bg-white pt-8 pb-16 lg:pt-12 lg:pb-24">
+    <section id="stats" className="scroll-mt-20 bg-white pt-8 pb-8 lg:pt-12 lg:pb-12">
       <div className="mx-auto max-w-6xl px-4 lg:px-8">
         <div className="mb-12 flex flex-col items-center gap-3 text-center">
           <div className="flex items-center gap-0">
