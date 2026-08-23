@@ -45,10 +45,18 @@ function WhyChooseUs() {
             className="isolate absolute z-[1] order-1 flex h-[83px] w-[220px] max-w-[220px] flex-none flex-row items-center gap-3 rounded-[18px] bg-white px-5 py-4"
             style={{ right: '-9.99px', bottom: '-33px' }}
           >
-            <span className="order-1 z-[1] flex h-[38px] w-[38px] flex-none shrink-0 flex-row items-center justify-center rounded-[19px] bg-[#DCE6F0] p-0">
+            <span
+              className="pointer-events-none absolute inset-0 z-0 order-0 flex-none rounded-[18px]"
+              style={{
+                background: 'rgba(255, 255, 255, 0.002)',
+                boxShadow: '0px 20px 50px -25px rgba(44, 90, 140, 0.25)',
+              }}
+            />
+
+            <span className="relative order-0 z-[1] flex h-[38px] w-[38px] flex-none shrink-0 flex-row items-center justify-center rounded-[19px] bg-[#DCE6F0] p-0">
               <img src={checkSquareIcon} alt="" className="h-5 w-5 object-contain" />
             </span>
-            <span className="order-0 flex h-[51px] w-[114px] flex-none items-center text-[12.5px] leading-[17px] font-bold text-[#132420]">
+            <span className="order-1 flex h-[51px] w-[114px] flex-none items-center text-[12.5px] leading-[17px] font-bold text-[#132420]">
               Board-certified specialist on every case
             </span>
           </span>
