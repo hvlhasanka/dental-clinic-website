@@ -3,6 +3,13 @@ import bracesIcon from "../assets/icons/braces.png";
 import starIcon from "../assets/icons/star-2.png";
 import barChartIcon from "../assets/icons/bar-chart.png";
 
+const DENTAL_IMPLANT_SERVICE = {
+  iconSrc: barChartIcon,
+  title: "Dental Implants",
+  description:
+    "Permanent, natural-looking replacements for missing teeth, placed with surgical precision.",
+};
+
 const SERVICES = [
   {
     iconSrc: starIcon,
@@ -16,37 +23,47 @@ const SERVICES = [
     description:
       "Traditional and clear aligner braces mapped out to your timeline and lifestyle.",
   },
-  {
-    iconSrc: barChartIcon,
-    title: "Dental Implants",
-    description:
-      "Permanent, natural-looking replacements for missing teeth, placed with surgical precision.",
-  },
-  {
-    iconSrc: barChartIcon,
-    title: "Dental Crowns",
-    description:
-      "Custom-fitted crowns that restore strength and shape to damaged or weakened teeth.",
-  },
-  {
-    iconSrc: barChartIcon,
-    title: "Pediatric Dentistry",
-    description:
-      "Gentle, kid-friendly checkups and treatments that build good habits early.",
-  },
-  {
-    iconSrc: barChartIcon,
-    title: "Cosmetic Veneers",
-    description:
-      "Thin, natural-looking veneers that correct chips, gaps, and discoloration.",
-  },
-  {
-    iconSrc: barChartIcon,
-    title: "Gum Treatment",
-    description:
-      "Deep cleaning and periodontal care that treats gum disease at the source.",
-  },
+  DENTAL_IMPLANT_SERVICE,
+  DENTAL_IMPLANT_SERVICE,
+  DENTAL_IMPLANT_SERVICE,
+  DENTAL_IMPLANT_SERVICE,
+  DENTAL_IMPLANT_SERVICE,
+  DENTAL_IMPLANT_SERVICE,
 ];
+
+function ServiceCard({
+  iconSrc,
+  title,
+  description,
+}: {
+  iconSrc: string;
+  title: string;
+  description: string;
+}) {
+  return (
+    <div className="flex min-h-[289.38px] flex-col justify-between gap-4 rounded-[18px] border border-[rgba(19,36,32,0.12)] bg-white px-[22px] py-6">
+      <div>
+        <span className="flex h-[52px] w-[52px] items-center justify-center rounded-[14px] bg-[#FBE0D6]">
+          <img src={iconSrc} alt="" className="h-5 w-5 object-contain" />
+        </span>
+        <div className="mt-4 flex flex-col gap-2">
+          <h3 className="text-[19px] leading-[26px] font-bold tracking-[-0.19px] text-brand-700">
+            {title}
+          </h3>
+          <p className="max-w-[209px] text-[13px] leading-[23px] font-medium text-[#3D504B]">
+            {description}
+          </p>
+        </div>
+      </div>
+      <a
+        href="#appointment"
+        className="flex w-fit items-center gap-1 text-[13.5px] font-bold text-brand-700 hover:text-brand-800"
+      >
+        Learn more →
+      </a>
+    </div>
+  );
+}
 
 function Services() {
   return (
@@ -67,10 +84,10 @@ function Services() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-[auto_auto]">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {/* Featured service card */}
           <div
-            className="relative isolate row-span-2 flex min-h-[380px] flex-col items-start justify-between overflow-hidden rounded-[18px] px-[30px] py-[34px] lg:min-h-[500px]"
+            className="relative isolate flex min-h-[380px] flex-col items-start justify-between overflow-hidden rounded-[18px] px-[30px] py-[34px] sm:col-span-2 sm:row-span-2 lg:min-h-[500px]"
             style={{
               background:
                 "linear-gradient(161.58deg, #2c5a8c 0%, #16324f 100%)",
@@ -118,35 +135,13 @@ function Services() {
           </div>
 
           {/* Other service cards */}
-          {SERVICES.map(({ iconSrc, title, description }) => (
-            <div
-              key={title}
-              className="flex min-h-[289.38px] flex-col justify-between gap-4 rounded-[18px] border border-[rgba(19,36,32,0.12)] bg-white px-[22px] py-6"
-            >
-              <div>
-                <span className="flex h-[52px] w-[52px] items-center justify-center rounded-[14px] bg-[#FBE0D6]">
-                  <img
-                    src={iconSrc}
-                    alt=""
-                    className="h-5 w-5 object-contain"
-                  />
-                </span>
-                <div className="mt-4 flex flex-col gap-2">
-                  <h3 className="text-[19px] leading-[26px] font-bold tracking-[-0.19px] text-brand-700">
-                    {title}
-                  </h3>
-                  <p className="max-w-[209px] text-[13px] leading-[23px] font-medium text-[#3D504B]">
-                    {description}
-                  </p>
-                </div>
-              </div>
-              <a
-                href="#appointment"
-                className="flex w-fit items-center gap-1 text-[13.5px] font-bold text-brand-700 hover:text-brand-800"
-              >
-                Learn more →
-              </a>
-            </div>
+          {SERVICES.map(({ iconSrc, title, description }, index) => (
+            <ServiceCard
+              key={`${title}-${index}`}
+              iconSrc={iconSrc}
+              title={title}
+              description={description}
+            />
           ))}
         </div>
 
