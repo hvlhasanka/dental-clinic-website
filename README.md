@@ -1,6 +1,8 @@
 # Dental Clinic Website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5a57964c-e4c7-41c2-a103-4c761fa7025e/deploy-status)](https://app.netlify.com/projects/lucaslhh-dental-clinic/deploys)
+Deployment status - [![Netlify Status](https://api.netlify.com/api/v1/badges/5a57964c-e4c7-41c2-a103-4c761fa7025e/deploy-status)](https://app.netlify.com/projects/lucaslhh-dental-clinic/deploys)
+
+Hosted on - https://lucaslhh-dental-clinic.netlify.app/
 
 ## 1. Description
 
