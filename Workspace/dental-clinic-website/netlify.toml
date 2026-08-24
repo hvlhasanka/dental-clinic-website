@@ -1,5 +1,4 @@
 [build]
-  base = "Workspace/dental-clinic-website"
   command = "npm run build"
   publish = "dist"
 
