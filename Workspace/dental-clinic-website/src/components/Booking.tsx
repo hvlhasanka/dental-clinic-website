@@ -169,7 +169,7 @@ function Booking() {
                     className="w-full rounded-xl border border-white/40 bg-white/[0.16] px-[14px] py-3 backdrop-blur-[3px] text-[14px] text-white placeholder-white/[0.55] focus:border-white/40 focus:outline-none [&::-webkit-calendar-picker-indicator]:brightness-0"
                   />
                   {!isDateFieldActive && (
-                    <HiOutlineCalendar className="pointer-events-none absolute top-1/2 right-[14px] h-4 w-4 -translate-y-1/2 text-white/60" />
+                    <HiOutlineCalendar className="pointer-events-none absolute top-1/2 right-[14px] h-4 w-4 -translate-y-1/2 text-black" />
                   )}
                 </div>
               </div>
