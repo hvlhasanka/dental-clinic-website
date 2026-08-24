@@ -32,7 +32,10 @@ function Booking() {
   const [isDateFieldActive, setIsDateFieldActive] = useState(false);
 
   return (
-    <section id="appointment" className="scroll-mt-20 bg-white py-16 lg:py-24">
+    <section
+      id="appointment"
+      className="scroll-mt-20 bg-white pt-8 pb-8 lg:pt-12 lg:pb-12"
+    >
       <div
         className="relative mx-auto grid max-w-[1180px] grid-cols-1 gap-12 overflow-hidden rounded-[36px] px-6 py-6 shadow-[0px_60px_100px_-50px_rgba(19,36,32,0.55)] sm:px-8 sm:py-8 lg:grid-cols-2 lg:gap-0 lg:px-12 lg:py-10"
         style={{
