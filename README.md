@@ -15,19 +15,31 @@ This is a static, single-page responsive marketing website for a dental clinic.
 </p>
 <p align="center">Figure 1.1: Website Cover</p>
 
-## 2. Walkthrough
+## 2. Features
+
+- Modern, professional landing page for a dental clinic
+- Clean healthcare-focused UI
+- Hero section highlighting the primary "Book an Appointment" call to action
+- Overview of dental services and treatments offered
+- Clinic stats and trust signals to build patient confidence
+- Patient testimonials and star ratings
+- Doctor and clinic profile information
+- Guided appointment booking flow
+- Fully responsive layout
+
+## 3. Walkthrough
 
 <div align="center">
   <video src="https://github.com/user-attachments/assets/026cc214-3319-4f69-84b5-24bd2954e830" controls width="80%"></video>
 </div>
-<p align="center">Figure 2.1: Desktop Walkthrough</p>
+<p align="center">Figure 3.1: Desktop Walkthrough</p>
 
 <div align="center">
   <video src="https://github.com/user-attachments/assets/cb634b8f-3683-4358-85b3-cba999a61116" controls width="30%"></video>
 </div>
-<p align="center">Figure 2.2: Mobile Walkthrough</p>
+<p align="center">Figure 3.2: Mobile Walkthrough</p>
 
-## 3. Setup
+## 4. Setup
 
 Project is in `Workspace/dental-clinic-website/` directory.
 
@@ -41,7 +53,7 @@ npm run lint      # lint with oxlint
 npm run format    # format with Prettier
 ```
 
-## 4. Technologies used
+## 5. Technologies used
 
 - [Vite](https://vite.dev/)
 - [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
@@ -50,11 +62,11 @@ npm run format    # format with Prettier
 - [oxlint](https://oxc.rs/docs/guide/usage/linter.html) + [Prettier](https://prettier.io/)
 - Deployed on [Netlify](https://www.netlify.com/)
 
-## 5. Credits
+## 6. Credits
 
 - Built with reference to Figma Community Design - [Clinic Website Figma File](https://www.figma.com/community/file/1670864141066734207/clinic-website)
 
-## 6. License
+## 7. License
 
 Copyright (c) 2026 H.V.L.Hasanka<br>
 Licensed under [MIT License](LICENSE)
