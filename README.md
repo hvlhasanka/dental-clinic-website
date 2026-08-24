@@ -52,7 +52,7 @@ npm run format    # format with Prettier
 
 - Built with reference to Figma Community Design - [Clinic Website Figma File](https://www.figma.com/community/file/1670864141066734207/clinic-website)
 
-## 6. License -
+## 6. License
 
 Copyright (c) 2026 H.V.L.Hasanka<br>
 Licensed under [MIT License](LICENSE)
