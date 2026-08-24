@@ -6,7 +6,7 @@ Hosted on - https://lucaslhh-dental-clinic.netlify.app/
 
 ## 1. Description
 
-This is a static, single-page marketing website for a dental clinic.
+This is a static, single-page responsive marketing website for a dental clinic.
 
 <p align="center">
   <kbd>
