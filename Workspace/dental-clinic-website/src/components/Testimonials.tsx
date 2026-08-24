@@ -75,7 +75,7 @@ function Testimonials() {
                 ★★★★★
               </span>
             </div>
-            <span className="relative z-[1] h-12 w-px flex-none bg-white/20" />
+            <span className="relative z-[1] h-12 w-px flex-none bg-[#FFFFFF20]" />
             <div className="relative z-[1] flex flex-col text-left">
               <span className="text-[16px] leading-[22px] font-bold text-white">
                 {REVIEW_COUNT}

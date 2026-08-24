@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import Specialists from "./components/Specialists";
 import Booking from "./components/Booking";
 import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Booking />
         <Testimonials />
       </main>
+      <Footer />
     </>
   );
 }
