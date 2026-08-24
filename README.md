@@ -8,7 +8,7 @@ This is a static, single-page marketing website for a dental clinic.
 
 <p align="center">
   <kbd>
-    <img src="./Documentation/Walkthrough/dental-clinic_cover.png" width="90%" />
+    <img src="https://raw.githubusercontent.com/hvlhasanka/dental-clinic-website/refs/heads/main/Documentation/Walkthrough/dental-clinic_cover.png" width="90%" />
   </kbd>
 </p>
 <p align="center">Figure 1.1: Website Cover</p>
@@ -16,12 +16,12 @@ This is a static, single-page marketing website for a dental clinic.
 ## 2. Walkthrough
 
 <div align="center">
-  <video src="Documentation/Walkthrough/dental-clinic_desktop-view.mov" controls width="80%"></video>
+  <video src="https://github.com/user-attachments/assets/026cc214-3319-4f69-84b5-24bd2954e830" controls width="80%"></video>
 </div>
 <p align="center">Figure 2.1: Desktop Walkthrough</p>
 
 <div align="center">
-  <video src="Documentation/Walkthrough/dental-clinic_mobile-view.mov" controls width="30%"></video>
+  <video src="https://github.com/user-attachments/assets/cb634b8f-3683-4358-85b3-cba999a61116" controls width="30%"></video>
 </div>
 <p align="center">Figure 2.2: Mobile Walkthrough</p>
 
